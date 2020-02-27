@@ -1,0 +1,128 @@
+.wrap
+	+b.form
+		+e.top
+			+e.row.flex
+				+e.column._col2
+					+e.IMG.avatar(src='/images/avatar.jpg')
+				+e.column._col6
+					+e.field
+						+e.INPUT.input(type="text", placeholder="Имя")
+						+e.input-border
+					+e.field
+						+e.INPUT.input(type="text", placeholder="Дата рождения")
+						+e.input-border
+					+e.field
+						+e.INPUT.input(type="text", placeholder="Город")
+						+e.input-border
+					+e.field
+						+e.INPUT.input(type="text", placeholder="Контактные данные")
+						+e.input-border
+			+e.IMG.approved(src='/images/approved.svg')
+			
+		+e.center
+			+e.row.flex
+				+e.column._col8
+					+e.H2.title
+						| Навыки
+			+e.row.flex.skills__
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| Html5
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| SASS
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| vANILLAJS
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| GIT
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| css3
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| LESS
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| aNGULAR
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| fOUNDATION
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| БЭМ
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| gULP
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| JQUERY
+				.form__column.form__column_col2.js-skill-item
+					+e.LABEL.item.checkbox__
+						+e.INPUT.input.js-skill-check(type='checkbox')
+						+e.icon
+							+svg('check')
+						+e.SPAN.text
+							| BOOTSTRAP
+							
+		+e.bottom
+			+e.row.flex._vertical
+				+e.column._col4
+					+e.speed.speed__.js-speed
+						+e.arrow
+							+e.icon
+								+svg('arrow')
+				+e.column._col4
+					+e.percent
+						+e.H3.title.percent-text
+							| Мой уровень владения 
+							br
+							| Java Script
+						+e.percent-result
+							span.js-skill-percent(data-percent="0") 0
+							| %

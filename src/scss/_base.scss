@@ -1,0 +1,106 @@
+*{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.wrap{
+	padding: 0 20px;
+	width: 100%;
+	max-width: 1210px;
+	z-index: 15;
+	margin: auto;
+	position: relative;
+}
+
+html{
+	&.js-lock{
+		overflow: hidden;
+	}
+}
+
+html, body{
+	
+	font-size: 1px; // 1rem = 1px 
+
+	@include max(740) {
+		font-size: 0.85px;
+	}
+
+}
+body{
+	position: relative;	
+	font-family: $font-family-roboto;
+	background: #f0f0f0;
+	color: $color-black;
+	&.js-lock{
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+}
+.main-container {
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+	padding: 60rem 0 60rem 0;
+	font-size: 16rem;
+	overflow: hidden;
+}
+input {
+    -webkit-appearance: none;
+}
+
+main{
+	display: block;
+}
+
+a{
+	text-decoration-skip-ink: none;
+	text-decoration: none;
+}
+a, button, input, textarea {
+	transition: all 0.2s ease-in-out;
+}
+.inline{
+	font-size: 0;
+
+	&>*{
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+
+	&_center{
+		justify-content: center;
+	}
+
+	&_inline{
+		display: inline-flex;
+	}
+
+	&_justify{
+		justify-content: space-between;
+	}
+
+	&_start{
+		align-items: flex-start;
+	}
+
+	&_vertical{
+		align-items: center;
+	}
+}
+
+img, svg{
+	vertical-align: top;
+	max-width: 100%;
+}
+
+svg {
+	height: auto;
+}

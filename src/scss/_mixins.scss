@@ -1,0 +1,42 @@
+@import "mixins/clearfix";
+@import "mixins/retina";
+@import "mixins/sprites";
+@import "mixins/triangle";
+@import "mixins/breakpoint";
+@import "mixins/visually-hidden";
+
+@function toem($num, $parent: 16) {
+	@return $num/$parent+em;
+}
+
+@mixin letter-spacing($x, $y) {
+	letter-spacing: toem(($x*$y)/1000,$x);
+}
+
+@mixin min($size) {
+	@media screen and (min-width: $size+px){
+		@content;
+	}
+}
+@mixin max($size) {
+	@media screen and (max-width: $size+px){
+		@content;
+	}
+}
+@mixin minh($size) {
+	@media screen and (min-height: $size+px){
+		@content;
+	}
+}
+@mixin maxh($size) {
+	@media screen and (max-height: $size+px){
+		@content;
+	}
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
